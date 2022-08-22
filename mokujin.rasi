@@ -1,0 +1,201 @@
+/*-----------------------------------------------------------------------------
+    Mokujin Rofi Theme
+    Version 1.0
+    Copyright 2022 seek
+    https://gitlab.com/mokujin-theme/mokujin-rofi-theme
+    
+    This program is free software: you can redistribute it and/or modify it 
+    under the terms of the GNU General Public License as published by the 
+    Free Software Foundation, either version 3 of the License, or (at your 
+    option) any later version.
+
+    This program is distributed in the hope that it will be useful, but 
+    WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY 
+    or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
+    more details.
+
+    You should have received a copy of the GNU General Public License along 
+    with this program. If not, see <https://www.gnu.org/licenses/>.   
+    ---------------------------------------------------------------------------*/
+
+configuration
+{
+    modes:                          [ run, window, windowcd ];
+    drun-display-format:            "{name} [<span weight='light' size='small' color='#647269'>({generic})</span>]";
+    display-drun:                   " ";
+    display-window:                 "缾 ";
+    display-windowcd:               "缾 ";
+	window-thumbnail:               false;
+	show-icons:                     false;
+}
+
+* 
+{
+    c00:                            #090f0d;
+    c01:                            #a82260;
+    c02:                            #94bb46;
+    c03:                            #bec674;
+    c04:                            #93bcc4;
+    c05:                            #48534f;
+    c06:                            #6dd596;
+    c07:                            #8e7a4b;
+    c08:                            #3a3c35;
+    c09:                            #d13278;
+    c10:                            #aed968;
+    c11:                            #dbe387;
+    c12:                            #acdce5;
+    c13:                            #647269;
+    c14:                            #5ff29a;
+    c15:                            #bca674;
+    c16:                            #5a625f;
+    c17:                            #4a514f;
+    c18:                            #1c1e1a;
+
+    font:                           "mononoki Nerd Font Mono Bold 16";
+    background-color:               var(c08);
+    text-color:                     var(c03);
+    
+    border:                         none;
+    spacing:                        2;
+
+    cursor:                         none;
+}
+
+window 
+{
+    padding:            20;
+}
+
+mainbox 
+{
+    padding:            20;
+}
+
+message
+{
+    text-color:         var(c01);
+    padding:            5px;
+}
+    
+element
+{
+    padding:            3px 1px 3px 12px;
+    orientation:        horizontal;
+    children:           [ element-text ];
+}
+
+element normal.normal
+{
+    text-color:         inherit;
+}
+
+element normal.active
+{
+    text-color:         var(c06);
+}
+
+element normal.urgent
+{
+    text-color:         var(c01);
+}
+
+element selected.normal
+{
+    text-color:         var(c02);
+    background-color:   var(c05);
+    border-radius:      50%;
+}
+
+element selected.active
+{
+    text-color:         var(c14);
+    background-color:   var(c05);
+    border-radius:      50%;
+}
+
+element selected.urgent
+{
+    text-color:         var(c01);
+    background-color:   var(c05);
+    border-radius:      50%;
+}
+
+element-text 
+{
+    background-color:   transparent;
+    cursor:             inherit;
+    highlight:          inherit;
+    text-color:         inherit;
+}
+
+listview
+{
+    padding:            2px 0 2px 0;
+    scrollbar:          true;
+    spacing:            2px;
+    fixed-height:       true;
+}
+
+textbox
+{
+    border-bottom:      2px solid;
+    border-color:       var(c02);
+}
+
+scrollbar 
+{
+    width:              8px;
+    padding:            1 1 1 8px;
+    handle-width:       2px;
+    handle-color:       var(c07);
+}
+
+inputbar 
+{
+    children:           [ "prompt","textbox-prompt-colon","entry","case-indicator" ];
+    text-color:         var(c15);
+    padding:            1px;
+    spacing:            0px;
+    margin:             0px 0px 10px 0px;
+}
+
+prompt 
+{
+    font:               "mononoki Nerd Font 20";
+    text-color:         var(c06);
+    horizontal-align:   0.5;
+    vertical-align:     0.5;
+    spacing:            0;
+}
+
+textbox-prompt-colon 
+{
+    str:                "";
+    text-color:         var(c05);
+    horizontal-align:   0.5;
+    vertical-align:     0.5;
+    expand:             false;
+}
+
+entry 
+{
+    font:               "mononoki Nerd Font 20";
+    placeholder:        "    ";
+    placeholder-color:  var(c13);
+    text-color:         var(c15);
+    text-align:         center;
+    horizontal-align:   0.488;
+    vertical-align:     0.1;
+    spacing:            1;
+    cursor:             text;
+    blink:              false;
+}
+
+
+/*
+------------------------------------------------------------------------------------------------
+ Misc Nerd Font Icons
+------------------------------------------------------------------------------------------------
+      ﳝ          ﳜ    ﴫ        ﲲ   
+ 雷      
+*/
