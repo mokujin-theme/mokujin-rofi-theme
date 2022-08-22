@@ -12,7 +12,7 @@ Just a simple .rasi theme file made using rofi 1.7.4.  Should be compliant with 
 ![](screenshots/screenshot-1.png)
 ![](screenshots/screenshot-2.png)
 ![](screenshots/screenshot-3.png)
-
+<sub>wallpaper credit: Dani Pendergast (www.danipendergast.com)</sub>
 
 ## Requirements
 - **mononoki Nerd Fonts** or **Nerd Fonts Complete**
