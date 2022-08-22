@@ -1,4 +1,4 @@
-# Mokujin Terminal Theme
+# Mokujin Rofi Theme
 A theme for [rofi](https://github.com/davatorium/rofi) based on the Mokujin colorway
 
 ![](https://img.shields.io/badge/License-GPLv3-yellowgreen) ![](https://img.shields.io/badge/rofi-1.7.4-yellowgreen)
