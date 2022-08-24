@@ -9,10 +9,11 @@ Just a simple .rasi theme file made using rofi 1.7.4.  Should be compliant with 
 
 
 ## Screenshots
-![](screenshots/screenshot-1.png)
-![](screenshots/screenshot-2.png)
-![](screenshots/screenshot-3.png)
-<sub>wallpaper credit: Dani Pendergast (www.danipendergast.com)</sub>
+<img src="screenshots/screenshot-1.png"  width="800"><br>
+<img src="screenshots/screenshot-2.png"  width="800"><br>
+<img src="screenshots/screenshot-3.png"  width="800"><br>
+<sub>wallpaper credit: Dani Pendergast (www.danipendergast.com)</sub><br>
+
 
 ## Requirements
 - **mononoki Nerd Fonts** or **Nerd Fonts Complete**
